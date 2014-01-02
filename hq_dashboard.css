@@ -1,0 +1,801 @@
+*{
+	margin: 0px;
+	padding: 0px;	
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.clearRight{
+	clear: right;
+}
+.clearLeft{
+	clear: left;
+}
+.clear{
+	clear: both;
+}
+.hidden{
+	display: none;
+}
+#wrapper{
+	width:1200px;
+	height: 900px;
+	margin: 20px auto 15px;
+	position:relative;
+}
+	/* top bar Container */
+	#wrapper #topBarCont{
+		width:1001px;
+		height:45px;
+		border-bottom: 2.5px solid #003c54;
+		margin: 20px auto 0px;
+		padding: 15px 10px 15px 10px;
+		background-color: #005b7f;
+		text-align: center;
+		position:relative;
+	}
+		/* top bar - profile section container */
+		#wrapper #topBarCont #profileCont{
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			min-width:180px;
+			height: 45px;
+			border: 0px;
+			position: absolute;
+			left:10px;
+			top:20px;
+			text-align: left;
+		}
+			#wrapper #topBarCont #profileCont #profileImg{
+				width:40px;
+				height: 40px;
+				border: 0px;
+				margin: 0px 10px 0px 0px;
+			}
+			#wrapper #topBarCont #profileCont h4{
+				color: #ffffff;
+				font-size: 12pt;
+				font-family: verdana;
+				font-weight: bold;
+				text-shadow: -3px -1px 4px rgba(150, 150, 150, 1);
+				display: inline-block;
+				zoom: 1;
+				*display: inline;
+			}
+			#wrapper #topBarCont #profileCont #logOutLock{
+				width:9px;
+				height: 12px;
+				border: 0px;
+				margin: 5px 10px 0px 0px;
+				cursor: pointer;
+			}
+			#wrapper #topBarCont #profileCont a{
+				color: #ffffff;
+				font-size: 10pt;
+				font-family: verdana;
+				text-decoration: none;
+				vertical-align: middle;
+				text-shadow: -3px -1px 4px rgba(150, 150, 150, 1);
+				display: block;
+			}
+		/* top bar - navigation section container */
+		#wrapper #topBarCont #navCont{
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			margin: 0px auto;
+		}
+			#wrapper #topBarCont #navCont div{
+				width:65px;
+				height: 35px;
+				padding: 5px 0px 5px 0px;
+				border-top: 2px solid #004b69;
+				border-bottom: 2px solid #004b69;
+				background-color: #1d7da2;
+				text-align: center;
+				cursor: pointer;
+			}
+			#wrapper #topBarCont #navCont img{
+				vertical-align:text-bottom;
+				margin: 0px;
+			}
+			#wrapper #topBarCont #navCont p{
+				color: #ffffff;
+				font-family: verdana;
+				font-size: 10pt;
+				font-weight: bold;
+				margin: 0px;
+			}
+			#wrapper #topBarCont #navCont .slctd{
+				background-color: #477e94;
+			}
+			#wrapper #topBarCont #navCont #left{
+				border-left: 2px solid #004b69;
+				border-right: 2px solid #004b69;
+				border-top-left-radius: 20%;
+				border-bottom-left-radius: 20%;
+			}
+			#wrapper #topBarCont #navCont #right{
+				border-right: 2px solid #004b69;
+				border-left: 2px solid #004b69;
+				border-top-right-radius: 20%;
+				border-bottom-right-radius: 20%;
+			}
+		/* top bar - right buttons container */
+		#wrapper #topBarCont #rightBtnsCont{
+			position: absolute;
+			top:20px;
+			right:10px;
+			margin: 10px 0px 10px 0px;
+		}
+			#wrapper #topBarCont #rightBtnsCont button{
+				background-color: #003c54;
+				padding: 5px 25px;
+				-webkit-border-radius: 7px;
+				-moz-border-radius: 7px;
+				border-radius: 7px;
+				border: 0px;
+				outline: 0;
+				font-family: verdana;
+				font-size: 10pt;
+				color: #ffffff;
+				cursor: pointer;
+			}
+			#wrapper #topBarCont #rightBtnsCont button:nth-child(2){
+				padding: 5px 25px;
+				margin-left: 8px; 
+			}
+	/* backgorund stuff container */
+	#wrapper #bckImgCont{
+		width:1021px;
+		height:700px;
+		margin: 0px auto;
+	}
+		#wrapper #bckImgCont img{
+			width:1021px;
+			height:700px;
+		}
+	/* hidden div container */
+	#wrapper #dropDownMenuCont{
+		width:1001px;
+		position:absolute;
+		left:89px;
+		margin: 0px auto;
+		padding: 10px 10px;
+		background-color: #eeeeee;
+		color: #1f556a;
+		font-family: verdana;
+		border: 1px solid transparent;
+
+	}
+		#wrapper #dropDownMenuCont a{
+			font-family: verdana;
+			font-size: 10pt;
+			font-weight: bold;
+			color: #b1b1b1;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		#wrapper #dropDownMenuCont img{
+			margin: 0px 0px 0px 5px;
+			vertical-align: -20%;
+		}
+			#wrapper #dropDownMenuCont #email{
+				width:700px;
+				margin: 0px auto;
+				overflow: visible !important;
+			}
+				#wrapper #dropDownMenuCont #email h2{
+					font-size: 22px;
+					font-weight: normal;
+					margin: 30px 0px 10px 0px;
+				}
+				#wrapper #dropDownMenuCont #email p{
+					font-size: 13px;
+					font-weight: normal;
+					color: #383a3b;
+				}
+				#wrapper #dropDownMenuCont #email #inputCont{
+					margin: 40px 0px 0px 0px;
+				}
+					#wrapper #dropDownMenuCont #email #inputCont input#contactInput{
+						outline: 0;
+						padding: 3px 0px 3px 5px;
+						font-size: 20px;
+						margin: 10px 5px 0px 0px;
+						border: 1px solid #dbdbdb;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+						-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+						box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+					}
+					#wrapper #dropDownMenuCont #email #inputCont input#contactInput:focus {
+						background-color: #ffc;
+					}
+					#wrapper #dropDownMenuCont #email #inputCont input.size1{
+						height:25px;
+						width:475px;
+					}
+					#wrapper #dropDownMenuCont #email #inputCont img{
+						border: 0px;
+						vertical-align: -8px;
+					}
+					#wrapper #dropDownMenuCont #email #inputCont p{
+						font-family: MyriadPro-Regular, 'Myriad Pro Regular', Helvetica, Arial, sans-serif;
+						font-size: 10pt;
+						float: right;
+					}
+				#wrapper #dropDownMenuCont #email #messageCont{
+					margin: 30px 0px 10px 0px;
+				}
+					#wrapper #dropDownMenuCont #email #messageCont input#subInput{
+						display: inline;
+						outline: 0;
+						padding: 3px 0px 3px 5px;
+						font-size: 20px;
+						margin: 10px 5px 0px 0px;
+						border: 1px solid #dbdbdb;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+						-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+						box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+					}
+					#wrapper #dropDownMenuCont #email #messageCont input#subInput:focus {
+						background-color: #ffc;
+					}
+					#wrapper #dropDownMenuCont #email #messageCont select{
+						display: inline;
+						height: 33px;
+						vertical-align: bottom;
+						outline: 0;
+						padding: 3px 0px 3px 5px;
+						font-size: 17px;
+						margin: 9px 0px 0px 0px;
+						border: 1px solid #dbdbdb;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+						-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+						box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+					}
+					#wrapper #dropDownMenuCont #email #messageCont input.size2{
+						height:25px;
+						width:565px;
+					}
+					#wrapper #dropDownMenuCont #email #messageCont textarea{
+						width:695px;
+						outline: 0;
+						padding: 3px 0px 3px 5px;
+						font-size: 20px;
+						margin: 10px 5px 0px 0px;
+						border: 1px solid #dbdbdb;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+						-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+						box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+					}
+					#wrapper #dropDownMenuCont #email #messageCont textarea:focus {
+						background-color: #ffc;
+					}
+				#wrapper #dropDownMenuCont #email #btnCont{
+					margin: 0px 0px 15px 0px;
+				}
+					#wrapper #dropDownMenuCont #email #btnCont input#saveTemp{
+						width:110px;
+						font-family: Lato-Regular, 'Lato-Regular', Helvetica, Arial, sans-serif;
+						font-size: 10pt;
+						padding: 5px 5px;
+						-webkit-border-radius: 7px;
+						-moz-border-radius: 7px;
+						border-radius: 7px;
+						outline: 0;
+						color: #ffffff;
+						cursor: pointer;
+						border: 0px;
+						text-shadow: 0 0 0;
+						-webkit-box-shadow: none;
+						-moz-box-shadow: none;
+						box-shadow: none;
+						background-color: #fb923a;
+						text-align: center;
+					}
+					#wrapper #dropDownMenuCont #email #btnCont input#sendEmail{
+						width:110px;
+						font-family: Lato-Regular, 'Lato-Regular', Helvetica, Arial, sans-serif;
+						font-size: 10pt;
+						padding: 5px 5px;
+						-webkit-border-radius: 7px;
+						-moz-border-radius: 7px;
+						border-radius: 7px;
+						outline: 0;
+						color: #ffffff;
+						cursor: pointer;
+						border: 0px;
+						background-color: #1db458;
+					}
+		#wrapper #dropDownMenuCont #social{
+				width:700px;
+				margin: 0px auto;
+				border: 1px solid transparent;
+				/*overflow: visible !important;*/
+				padding: 1px 0px;
+			}
+				#wrapper #dropDownMenuCont #social h2{
+					font-size: 22px;
+					font-weight: normal;
+					margin: 30px 0px 10px 0px;
+				}
+				#wrapper #dropDownMenuCont #social p{
+					font-size: 13px;
+					font-weight: normal;
+					color: #383a3b;
+				}
+				#wrapper #dropDownMenuCont #social #linksCont{
+					margin: 40px 0px 0px 0px;
+				}
+				#wrapper #dropDownMenuCont #social #linksCont a{
+					margin: 0px 10px 0px 0px;
+				}
+				#wrapper #dropDownMenuCont #social #linksCont a:last-child{
+					text-decoration: underline;
+					margin: 25px 0px 0px 0px;
+				}
+				#wrapper #dropDownMenuCont #social #linksCont div.rectImg{
+					width:32px;
+					height:30px;
+					-moz-border-radius: 5px;
+					-webkit-border-radius: 5px;
+					border-radius: 5px;
+					padding: 5px;
+					text-align: center;
+				}
+				#wrapper #dropDownMenuCont #social #linksCont div#twitter{
+					background-color: #2ba9e1;
+				}
+					#wrapper #dropDownMenuCont #social #linksCont div#twitter img{
+						padding: 5px 8px 0px 5px;
+						margin: 0px;
+						border: 0px;
+					}
+				#wrapper #dropDownMenuCont #social #linksCont div#fb{
+					background-color: #3c5a99;
+				}
+					#wrapper #dropDownMenuCont #social #linksCont div#fb img{
+						padding: 5px 5px 0px 5px;
+						margin: 0px;
+						border: 0px;
+					}
+				#wrapper #dropDownMenuCont #social #linksCont div#linkedin{
+					background-color: #007bb5;
+				}
+					#wrapper #dropDownMenuCont #social #linksCont div#linkedin img{
+						padding: 5px 5px 0px 0px;
+						border: 0px;
+					}
+				#wrapper #dropDownMenuCont #social textarea{
+						width:695px;
+						outline: 0;
+						padding: 3px 0px 3px 5px;
+						font-size: 20px;
+						margin: 10px 5px 0px 0px;
+						border: 1px solid #dbdbdb;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+						-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+						box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+					}
+					#wrapper #dropDownMenuCont #social textarea:focus {
+						background-color: #ffc;
+					}
+				#wrapper #dropDownMenuCont #social #btnCont{
+					margin: 0px 0px 15px 0px;
+				}
+					#wrapper #dropDownMenuCont #social #btnCont input#sendSocialMessage{
+						width:110px;
+						font-family: Lato-Regular, 'Lato-Regular', Helvetica, Arial, sans-serif;
+						font-size: 10pt;
+						padding: 5px 5px;
+						-webkit-border-radius: 7px;
+						-moz-border-radius: 7px;
+						border-radius: 7px;
+						outline: 0;
+						color: #ffffff;
+						cursor: pointer;
+						border: 0px;
+						background-color: #1db458;
+					}
+		#wrapper #dropDownMenuCont #tools #subNavCont{
+			margin: 0px 10px 0px 0px;
+		}
+			#wrapper #dropDownMenuCont #tools #subNavCont div{
+				width:140px;
+				height: 35px;
+				padding: 5px 0px 5px 0px;
+				border-top: 2px solid #dfdfdf;
+				border-bottom: 2px solid #dfdfdf;
+				background-color: #f2f2f2;
+				text-align: center;
+				cursor: pointer;
+			}
+			#wrapper #dropDownMenuCont #tools #subNavCont p{
+				color: #4f5151;
+				font-family: verdana;
+				font-size: 9pt;
+				margin: 10px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #subNavCont .slctd{
+				background-color: #eeeeee;
+			}
+			#wrapper #dropDownMenuCont #tools #subNavCont #left{
+				border-left: 2px solid #dfdfdf;
+				border-right: 2px solid #dfdfdf;
+				border-top-left-radius: 9%;
+				border-bottom-left-radius: 9%;
+			}
+			#wrapper #dropDownMenuCont #tools #subNavCont div:nth-child(2){
+				border-right: 2px solid #dfdfdf;
+			}
+			#wrapper #dropDownMenuCont #tools #subNavCont #right{
+				border-right: 2px solid #dfdfdf;
+				border-left: 2px solid #dfdfdf;
+				border-top-right-radius: 9%;
+				border-bottom-right-radius: 9%;
+			}
+		#wrapper #dropDownMenuCont #tools #accountDetails{
+			width: 900px;
+			margin: 0px 0px 0px 120px;
+			padding: 50px 0px 0px 0px;
+			color: #1f556a;
+			font-family: verdana;
+		}
+			#wrapper #dropDownMenuCont #tools #accountDetails fieldset{
+				border: 0px;
+				font-size: 14pt;
+				margin: 10px 0px 0px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.size1{
+				height:22px;
+				width:100px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.size2{
+				height:22px;
+				width:160px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.size3{
+				height:22px;
+				width:223.5px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.size4{
+				height:22px;
+				width:347px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.size5{
+				height:22px;
+				width:475px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input{
+				display: block;
+				outline: 0;
+				padding: 3px 0px 3px 5px;
+				font-size: 16px;
+				margin: 10px 0px 0px 0px;
+				border: 1px solid #dbdbdb;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+				box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input:focus {
+				background-color: #ffc;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails .marginLeft{
+				margin: 10px 0px 0px 20px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails fieldset:last-child{
+				margin: 10px 0px 0px 15px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails h2{
+				font-size: 22pt;
+				font-weight: normal;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #personalGoalField{
+				width:250px;
+				margin: 20px 0px 0px 0px;
+				font-size: 14pt;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #personalUrlField{
+				margin: 20px 0px 0px 0px;
+				border: 0px;
+				font-size: 14pt;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #personalUrlField p{
+				font-size: 10pt;
+				color: black;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #personalUrlField input{
+				display:inline;
+				zoom: 1;
+				*display: inline;
+				margin: 15px 0px 0px 5px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails h4{
+				font-size: 14pt;
+				font-weight: normal;
+				margin: 20px 0px 15px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #emailSettings{
+				width:auto;
+				height: auto;
+				cursor: pointer;
+				color: #383a3b;
+				font-size: 11pt;
+				margin: 15px 10px 10px 0px;
+				padding: 0px;
+				display: inline;
+				zoom: 1;
+				*display: inline;
+				border: 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails #btnCont{
+				float: right;
+				width: 170px;
+				margin: 0px 20px 30px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #accountDetails input.btn{
+				font-size: 13px;
+				width: auto;
+				height: 27px;
+				line-height: 27px;
+				padding: 0 20px;
+				margin: 0px 20px 30px 0px;
+				display: inline-block;
+				zoom: 1;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				color: #1f556a;
+				font-weight: bold;
+				cursor: pointer;
+				border: solid 1px #749708;
+				text-shadow: 0 0 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				background: #99CC00;
+				position: relative;
+				right:170px;
+				top:45px;
+			}
+		#wrapper #dropDownMenuCont #tools #contactBook{
+			width: 820px;
+			margin: 0px 70px;
+			padding: 80px 0px 0px 0px;
+			color: #1f556a;
+			font-family: verdana;
+		}
+			#wrapper #dropDownMenuCont #tools #contactBook h2{
+				font-size: 22pt;
+				font-weight: normal;
+				margin: 0px 0px 20px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #contactBook #btnCont{
+				margin: 0px 0px 15px 0px;
+				display: inline-flex;
+			}
+				#wrapper #dropDownMenuCont #tools #contactBook #btnCont input#importContactsBtn{
+					width:180px;
+					font-family: verdana;
+					font-weight: bold;
+					font-size: 12pt;
+					padding: 10px 10px;
+					margin: 0px 5px 0px 0px;
+					-webkit-border-radius: 7px;
+					-moz-border-radius: 7px;
+					border-radius: 7px;
+					outline: 0;
+					color: #ffffff;
+					cursor: pointer;
+					border: 0px;
+					background-color: #6fc056;
+				}
+				#wrapper #dropDownMenuCont #tools #contactBook #btnCont div#actionsContactsBtn{
+					width:180px;
+					height: 18px;
+					font-family: verdana;
+					font-weight: bold;
+					font-size: 12pt;
+					padding: 10px 10px;
+					margin: 0px 0px 0px 5px;
+					-webkit-border-radius: 7px;
+					-moz-border-radius: 7px;
+					border-radius: 7px;
+					outline: 0;
+					color: #ffffff;
+					cursor: pointer;
+					border: 0px;
+					background-color: #1d7da2;
+					text-align: center;
+				}
+				#wrapper #dropDownMenuCont #tools #contactBook #btnCont div#actionsContactsBtn img:first-child{
+					margin: 0px 5px 0px 5px;
+				}
+				#wrapper #dropDownMenuCont #tools #contactBook #btnCont div#actionsContactsBtn img:last-child{
+					margin: 5px 5px 0px 5px;
+				}
+			#wrapper #dropDownMenuCont #tools #contactBook #table table{
+				width:100%;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				border: 1px solid #fbfbfb;
+			}
+			#wrapper #dropDownMenuCont #tools #contactBook #table th{
+				width:140px;
+				height: 40px;
+				background-color: #005b7f;
+				border-right: 1px solid #003c54;
+				color: #ffffff;
+				padding: 5px 10px;
+			}
+			#wrapper #dropDownMenuCont #tools #contactBook #table td{
+				width:100px;
+				height: 40px;
+				padding: 5px 10px;
+				border: 1px solid black;
+			}
+		#wrapper #dropDownMenuCont #tools #offlineDonations{
+			width: 800px;
+			margin: 0px auto;
+			padding: 80px 0px 0px 0px;
+			color: #1f556a;
+			font-family: verdana;
+		}
+			#wrapper #dropDownMenuCont #tools #offlineDonations h2{
+				font-size: 22pt;
+				font-weight: normal;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations fieldset{
+				border: 0px;
+				font-size: 14pt;
+				margin: 10px 0px 0px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations input{
+				display: block;
+				outline: 0;
+				padding: 3px 0px 3px 5px;
+				font-size: 16px;
+				margin: 10px 0px 0px 0px;
+				border: 1px solid #dbdbdb;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+				box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations input:focus {
+				background-color: #ffc;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations .marginLeft{
+				margin: 10px 0px 0px 20px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations input.size1{
+				height:22px;
+				width:100px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations input.size2{
+				height:22px;
+				width:160px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations input.size3{
+				height:22px;
+				width:223.5px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations select{
+				display: block;
+				outline: 0;
+				padding: 3px 0px 3px 5px;
+				font-size: 16px;
+				margin: 10px 0px 0px 0px;
+				border: 1px solid #dbdbdb;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+				box-shadow: inset rgba(2,3,3,.75) 0px 0px 2px;
+			}
+			#wrapper #dropDownMenuCont #tools #offlineDonations #btnCont{
+				margin: 20px 0px 30px 0px;
+			}
+				#wrapper #dropDownMenuCont #tools #offlineDonations #btnCont input#submitOfflineDonation{
+					width:180px;
+					font-family: verdana;
+					font-size: 12pt;
+					padding: 10px 10px;
+					-webkit-border-radius: 7px;
+					-moz-border-radius: 7px;
+					border-radius: 7px;
+					outline: 0;
+					color: #ffffff;
+					cursor: pointer;
+					border: 0px;
+					background-color: #6fc056;
+				}
+		#wrapper #dropDownMenuCont #tools #socialMedia{
+			width: 820px;
+			margin: 0px 70px;
+			padding: 80px 0px 0px 0px;
+			color: #1f556a;
+			font-family: verdana;
+		}
+			#wrapper #dropDownMenuCont #tools #socialMedia h2{
+				font-size: 22pt;
+				font-weight: normal;
+				margin: 0px 0px 40px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia div:nth-child(n+1):not(:last-child){
+				width:820px;
+				border-bottom: 1px solid #dfdfdf;
+				padding: 20px 0px 50px 0px;
+				position: relative;
+				/*zoom:1.0;*/
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia div:last-child{
+				width:820px;
+				padding: 20px 0px 50px 0px;
+				position: relative;
+				/*zoom:1.0;*/
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia p{
+				font-size: 14pt;
+				color: #034964;
+				margin: 0px 0px 5px 0px;
+				display: inline;
+				zoom: 1;
+				*display: inline;
+				position: absolute;
+				left:65px;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia label{
+				font-size: 11pt;
+				color: #a7a7a7;
+				cursor: pointer;
+				display: auto;
+				position: absolute;
+				left:65px;
+				top:45px;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia input{
+				margin: 0px 5px 0px 0px;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia .socialCont img:first-child{
+				display: inline;
+				zoom: 1;
+				*display: inline;
+				position: absolute;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia #fbSocialCont img:first-child{
+				padding: 0px 5px 0px 0px;
+				display: inline;
+				zoom: 1;
+				*display: inline;
+				position: absolute;
+			}
+			#wrapper #dropDownMenuCont #tools #socialMedia .socialCont img:last-child{
+				margin: 0px 200px 20px 0px;
+				cursor: pointer;
+				/*display: inline-block;
+				zoom: 1;
+				*display: inline;
+				position: absolute;
+				right:200px;
+				bottom:20px;*/
+			}
